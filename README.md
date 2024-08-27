@@ -1,70 +1,146 @@
-# Getting Started with Create React App
+# React - Atomic blog ContextAPI practice
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🔗 [Live Preview](https://dainty-tiramisu-cf07f7.netlify.app/)
 
-## Available Scripts
+![Design preview](./public/preview.png)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## About Project 👋
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The Atomic Blog app is a simple React application that generates random posts using the Faker.js library. It allows users to search through posts, toggle a fake dark mode, and interact with posts by adding, clearing, or moving them from an archive.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The app uses React Context to manage and share state across components, making it easy to manage the posts and other app-wide state. Practicing **Context API** was the main purpose of this app.
 
-### `npm test`
+Created using create-react-app
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Features 👨‍💻
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-   **Random Post Generation:** Generates random posts using the Faker.js library.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-   **Search Functionality:** Allows users to search through posts by title and body.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-   **Dark Mode Toggle:** Simulates dark mode with a simple toggle button.
 
-### `npm run eject`
+-   **Post Archive:** Displays archived posts with the ability to add them as new posts.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-   **Add and Clear Posts:** Users can add new posts and clear all existing posts.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## How it works ⚙️
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+-   **App:** The main component that manages the app's state and provides context to other components.
 
-## Learn More
+-   **Header:** Displays the app's title and search functionality.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-   **SearchPosts:** Handles the search input.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+-   **Results:** Displays the number of posts found.
 
-### Code Splitting
+-   **Main:** Contains the form to add new posts and displays the list of posts.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+-   **FormAddPost:** Handles the addition of new posts.
 
-### Analyzing the Bundle Size
+-   **List:** Displays the list of posts.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+-   **Archive:** Manages archived posts and allows adding them as new posts.
 
-### Making a Progressive Web App
+-   **Footer:** Displays the app's footer.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Technologies & Dependencies used 📦
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **React:** useEffect, useState, components
 
-### Deployment
+- **CSS:** basic styling
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- **Context API:** createContext, useContext.
 
-### `npm run build` fails to minify
+dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- "@testing-library/jest-dom": "^5.16.5",
+- "@testing-library/react": "^13.4.0",
+- "@testing-library/user-event": "^13.5.0",
+- "react": "^18.2.0",
+- "react-dom": "^18.2.0",
+- "react-scripts": "5.0.1",
+- "web-vitals": "^2.1.4"
+
+devDependencies:
+
+- "@faker-js/faker": "^7.6.0"
+
+---
+
+## Prerequisites 📚
+
+Ensure you have the following installed on your system:
+
+    Node.js v18.00.0
+    npm or yarn
+
+---
+
+## Clone & Run locally 🏃‍♂️
+
+1. **Clone the Repository:**
+
+   - On the GitHub repo page, click the green "Code" button.
+
+   - Copy the HTTPS URL.
+
+2. **Open the Terminal:**
+
+   - Open the terminal by typing "cmd" in your desktop's start menu, **OR**
+
+   - Right-click on the desktop and select "Git Bash Here" (if you have Git Bash installed), **OR**
+
+   - Open Visual Studio Code's terminal by clicking "Terminal" -> "New Terminal" inside the editor.
+
+3. **Navigate to Your Project Location:**
+
+   - In the terminal, navigate to your desired location (e.g., desktop) using the command: `cd desktop`. Adjust the path if your project is located elsewhere.
+
+   - Ensure that your terminal's address is inside the project folder.
+
+4. **Clone the Repository:**
+
+   - Run the command: `git clone /link/`. Replace `/link/` with the HTTPS URL from step 1.
+
+5. **Enter the Project Directory:**
+
+   - Navigate into the cloned repository by typing: `cd /folder-name/`. Replace `/folder-name/` with the name of the cloned folder.
+
+6. **Install Dependencies:**
+
+   - Run the command: `npm install` to install all the necessary dependencies.
+
+7. **Start the Project:**
+
+   - Run the command: `npm start` or `yarn start` to start the project. It will open in your default browser at [localhost:3000/](http://localhost:3000/)
+
+---
+
+## Project Structure 📂
+
+
+    ├── public
+    ├── src
+    │ ├── App.js
+    │ ├── index.js
+    │ ├── style.css
+    │ ├── Test.js
+    ├── package.json 
+    └── README.md 
+
+---
+
+## Contributing 💻
+
+Contributions are closed at the moment.
+
+---
